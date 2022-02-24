@@ -58,6 +58,8 @@ public class FirstPersonController : MonoBehaviour
     public bool playerCanMove = true;
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
+    [HideInInspector]
+    public Vector3 currentVelocity;
 
     // Internal Variables
     private bool isWalking = false;
@@ -368,6 +370,8 @@ public class FirstPersonController : MonoBehaviour
     {
         #region Movement
 
+
+        currentVelocity = Vector3.zero;
         if (playerCanMove)
         {
             // Calculate how fast we should be moving
@@ -414,6 +418,7 @@ public class FirstPersonController : MonoBehaviour
                 }
 
                 rb.AddForce(velocityChange, ForceMode.VelocityChange);
+                currentVelocity = targetVelocity;
             }
             // All movement calculations while walking
             else
@@ -435,6 +440,7 @@ public class FirstPersonController : MonoBehaviour
                 velocityChange.y = 0;
 
                 rb.AddForce(velocityChange, ForceMode.VelocityChange);
+                currentVelocity = targetVelocity;
             }
         }
 
