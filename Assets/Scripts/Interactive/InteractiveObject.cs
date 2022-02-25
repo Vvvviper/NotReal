@@ -59,7 +59,6 @@ namespace Interactive
             {
                 float currentTime = audioSource.time;
                 isWaiting = true;
-                Debug.Log(currentTime);
                 while (currentTime < audioSource.clip.length)
                 {
                     currentTime += Time.deltaTime;
@@ -74,21 +73,31 @@ namespace Interactive
             if (currentSound.audioClip.Length != 0)
                 audioClip = currentSound.audioClip[clipIndex];
 
+            //get a random dialogue text from sound event
+            string dialogue = "";
+            int textIndex = Random.Range(0, currentSound.dialogueText.Count);
+            if (currentSound.dialogueText.Count != 0)
+                dialogue = currentSound.dialogueText[textIndex]._text;
+                
+
             switch (currentSound.soundType)
             {
                 case SoundType.playLoop:
                     PlayLoop(audioClip);
+                    DisplayDialogue(dialogue);
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
                     break;
                 case SoundType.playOnce:
                     PlayOnce(audioClip);
+                    DisplayDialogue(dialogue);
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
                     StartCoroutine(TriggerSound());
                     break;
                 case SoundType.playEnter:
                     PlayOnce(audioClip);
+                    DisplayDialogue(dialogue);
                     waitClipFinish = currentSound.needFinish;
                     break;
             }
@@ -117,6 +126,10 @@ namespace Interactive
             audioSource.Play();
         }
 
+        private void DisplayDialogue(string text)
+        {
+            DialogueController.instance.ShowLine(text);
+        }
 
     }
 
