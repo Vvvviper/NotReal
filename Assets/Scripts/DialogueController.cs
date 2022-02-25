@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[System.Serializable]
+public class DialogueScripts
+{
+    public List<string> DialoguePiece;
+}
+
+
 public class DialogueController : MonoBehaviour
 {
     public static DialogueController instance;
@@ -13,10 +20,11 @@ public class DialogueController : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _textComponent;
     [SerializeField] private float _textSpeed;
-    [SerializeField] private List<string> _dialogueStrings;
+    [SerializeField] private List<DialogueScripts> _dialogueStrings;
     [SerializeField] private GameObject DialogueBox;
     [SerializeField] private float _disappearTime = 2f;
 
+    private int _dialoguePieceIndex = 0;
     private int _dialogueIndex = 0;
 
     public enum DialogueState
@@ -31,12 +39,12 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-        HideDialoge();
+        ShowLine();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             switch (CurrentDialogueState)
             {
@@ -61,17 +69,17 @@ public class DialogueController : MonoBehaviour
                     break;
             }
 
-        }
+        }*/
     }
 
     public void ShowLine()
     {
-        if (_dialogueIndex < _dialogueStrings.Count)
-        {
-            DialogueBox.SetActive(true);
-            StartCoroutine(PopText());
-            _dialogueIndex++;
-        }
+        if (_dialoguePieceIndex >= _dialogueStrings.Count)
+            return;
+        if (_dialogueIndex >= _dialogueStrings[_dialoguePieceIndex].DialoguePiece.Count)
+            return;
+        DialogueBox.SetActive(true);
+        StartCoroutine(PopText());
     }
 
     public void ShowLine(string content)
@@ -87,31 +95,44 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator PopText()
     {
+        float time = 0f;
         CurrentDialogueState = DialogueState.ShowingDia;
         string t = "";
-        foreach (char c in _dialogueStrings[_dialogueIndex].ToCharArray())
+        foreach (char c in _dialogueStrings[_dialoguePieceIndex].DialoguePiece[_dialogueIndex].ToCharArray())
         {
             t += c;
             _textComponent.text = t;
             yield return new WaitForSeconds(_textSpeed);
+            time += _textSpeed;
         }
         CurrentDialogueState = DialogueState.InPlace;
-        yield return new WaitForSeconds(_disappearTime);
-        ShowLine();
+        yield return new WaitForSeconds(_disappearTime + time / 5f);
+        _dialogueIndex++;
+        if (_dialogueIndex < _dialogueStrings[_dialoguePieceIndex].DialoguePiece.Count)
+            ShowLine();
+        else
+        {
+            HideDialoge();
+            _dialoguePieceIndex++;
+            _dialogueIndex = 0;
+        }
+            
     }
 
     IEnumerator PopText(string content)
     {
+        float time = 0f;
         CurrentDialogueState = DialogueState.ShowingDia;
         string t = "";
         foreach (char c in content.ToCharArray())
         {
             t += c;
             _textComponent.text = t;
-            yield return new WaitForSeconds(_textSpeed);
+            yield return new WaitForSeconds(_textSpeed );
+            time += _textSpeed;
         }
         CurrentDialogueState = DialogueState.Interact;
-        yield return new WaitForSeconds(_disappearTime);
+        yield return new WaitForSeconds(_disappearTime + time / 5f);
         HideDialoge();
     }
 }
