@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace Footsteps {
+namespace Controller
+{
 
 	// Custom inspector of type 'CharacterFootsteps'
 	[CustomEditor(typeof(CharacterFootsteps))]

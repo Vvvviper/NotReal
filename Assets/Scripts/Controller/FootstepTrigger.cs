@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Footsteps {
+namespace Controller
+{
 
 	[RequireComponent(typeof(Collider), typeof(Rigidbody))]
 	public class FootstepTrigger : MonoBehaviour {
