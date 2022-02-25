@@ -741,20 +741,20 @@ MonoBehaviour:
     audioClip:
     - {fileID: 8300000, guid: 20d2d7095a3b13c43baf263091e3a359, type: 3}
     dialogueText:
-    - _text: what is that sound
+    - what is that sound
     needFinish: 0
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 63842371fad0fa74ab2623ec7d28a272, type: 3}
     dialogueText:
-    - _text: oh I Hit the table
-    - _text: my foot!!
+    - Oh! I hit a table!
+    - My feet!
     needFinish: 1
   - soundType: 0
     audioClip:
     - {fileID: 8300000, guid: 20d2d7095a3b13c43baf263091e3a359, type: 3}
     dialogueText:
-    - _text: keep going
+    - I need to carry on!
     needFinish: 0
   PlayOnAwake: 1
 --- !u!43 &953751495

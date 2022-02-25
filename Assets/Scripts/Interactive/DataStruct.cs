@@ -8,15 +8,8 @@ namespace Interactive
     public class SoundInfo{
         public SoundType soundType;
         public AudioClip[] audioClip;
-        public List<DialogueText> dialogueText;
+        public List<string> dialogueText;
         public bool needFinish;
-    }
-
-
-    [System.Serializable]
-    public class DialogueText
-    {
-        public string _text;
     }
 
     public enum SoundType

@@ -77,7 +77,7 @@ namespace Interactive
             string dialogue = "";
             int textIndex = Random.Range(0, currentSound.dialogueText.Count);
             if (currentSound.dialogueText.Count != 0)
-                dialogue = currentSound.dialogueText[textIndex]._text;
+                dialogue = currentSound.dialogueText[textIndex];
                 
 
             switch (currentSound.soundType)
