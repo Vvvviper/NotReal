@@ -5,6 +5,11 @@ using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
+    public static DialogueController instance;
+    private void Awake()
+    {
+        instance = this;
+    }
 
     [SerializeField] private TextMeshProUGUI _textComponent;
     [SerializeField] private float _textSpeed;
