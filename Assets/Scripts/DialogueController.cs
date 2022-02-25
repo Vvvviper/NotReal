@@ -15,6 +15,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private float _textSpeed;
     [SerializeField] private List<string> _dialogueStrings;
     [SerializeField] private GameObject DialogueBox;
+    [SerializeField] private float _disappearTime = 2f;
 
     private int _dialogueIndex = 0;
 
@@ -30,7 +31,7 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-        
+        HideDialoge();
     }
 
     private void Update()
@@ -95,6 +96,8 @@ public class DialogueController : MonoBehaviour
             yield return new WaitForSeconds(_textSpeed);
         }
         CurrentDialogueState = DialogueState.InPlace;
+        yield return new WaitForSeconds(_disappearTime);
+        ShowLine();
     }
 
     IEnumerator PopText(string content)
@@ -108,5 +111,7 @@ public class DialogueController : MonoBehaviour
             yield return new WaitForSeconds(_textSpeed);
         }
         CurrentDialogueState = DialogueState.Interact;
+        yield return new WaitForSeconds(_disappearTime);
+        HideDialoge();
     }
 }
