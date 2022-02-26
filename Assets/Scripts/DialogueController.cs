@@ -91,7 +91,6 @@ public class DialogueController : MonoBehaviour
     IEnumerator PopLine(string content)
     {
         DialogueBox.SetActive(true);
-        FPC.playerCanMove = false;
         float time = 0f;
         CurrentDialogueState = DialogueState.ShowingLine;
         string t = "";
