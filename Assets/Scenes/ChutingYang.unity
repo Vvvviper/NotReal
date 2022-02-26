@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256500
+  m_Name: pb_Mesh-207220
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -140,8 +140,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 5, y: 2.5, z: -0.25}
+      m_Extent: {x: 6, y: 2.5, z: 0.25}
   m_Shapes:
     vertices: []
     shapes: []
@@ -457,7 +457,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256524
+  m_Name: pb_Mesh-207244
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -468,8 +468,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 4}
   m_Shapes:
     vertices: []
     shapes: []
@@ -621,7 +621,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256488
+  m_Name: pb_Mesh-207208
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -632,8 +632,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 4}
   m_Shapes:
     vertices: []
     shapes: []
@@ -949,7 +949,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256548
+  m_Name: pb_Mesh-207268
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -960,8 +960,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 4}
   m_Shapes:
     vertices: []
     shapes: []
@@ -1830,7 +1830,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256536
+  m_Name: pb_Mesh-207256
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1841,8 +1841,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 4}
   m_Shapes:
     vertices: []
     shapes: []
@@ -1988,6 +1988,32 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1175428601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5616461045408898327, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+  m_PrefabInstance: {fileID: 2881446018085507761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1175428608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175428601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeeb74018fad38a4e8408d19aa1b4e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundInfo:
+  - soundType: 1
+    audioClip:
+    - {fileID: 8300000, guid: fcb8d3d7472ab78458ea523783a2596c, type: 3}
+    lineText:
+    - 'Loop: TV sound'
+    dialogueText: []
+    needFinish: 0
+  PlayOnAwake: 0
 --- !u!43 &1288990658
 Mesh:
   m_ObjectHideFlags: 0
@@ -2322,7 +2348,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256476
+  m_Name: pb_Mesh-207196
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2333,8 +2359,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 6}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2486,7 +2512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256560
+  m_Name: pb_Mesh-207280
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2497,8 +2523,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 4}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2650,7 +2676,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256572
+  m_Name: pb_Mesh-207292
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2661,8 +2687,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.25, y: 2.5, z: -4}
+      m_Extent: {x: 0.25, y: 2.5, z: 6}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2814,7 +2840,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-256512
+  m_Name: pb_Mesh-207232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2823,10 +2849,10 @@ Mesh:
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 52
+    vertexCount: 38
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 2, y: 2.5, z: -0.25000277}
+      m_Extent: {x: 2, y: 2.5, z: 0.25000277}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2843,10 +2869,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600180019001a0019001b001a001c001d001e001d001f001e00200021002200210023002200240025002600250027002600280029002a0029002b002a002c002d002e002d002f002e00300031003200310033003200
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600020003000800030009000800060007000a0007000b000a0003000600090006000a0009000c000d000e000d000f000e001000110012001100130012000e000f0014000f00150014001200130016001300170016001300180017001800190017001a001b001c001b001d001c001e001f0020001f0021002000220023002400230025002400
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 52
+    m_VertexCount: 38
     m_Channels:
     - stream: 0
       offset: 0
@@ -2904,8 +2930,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 2496
-    _typelessdata: 00000000000000000000000000000000000000000000803f000080bf0000000000000000000080bf00000000000000000000803f000000000000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000000000000000000080400000000000000000000000000000803f000080bf0000000000000000000080bf00000000000080400000803f000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000804000004040000000000000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000000000008040000000000000000000000000000000000000803f000080bf0000000000000000000080bf000080c00000000000004040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000804000008040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080c00000804000000000000080400000000000000000000000000000803f000080bf0000000000000000000080bf00000000000080400000803f000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf00008040000000000000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000000000000a0400000803f0000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000a04000004040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000804000008040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080c000008040000040400000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000a040000080400000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000080c00000a0400000803f000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000804000004040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000040c0000080400000803f0000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000a040000040400000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000a0400000803f00000000000000bf0100e83500000000000080bf0000803f000000000100e835000080bff1ff7f3f0000000020008033000000001d0000bf01007436000000b5000080bf0000803f0000002001007436000080bf320058b5000000000000803f00008040000000bf01007436000000b5000080bf0000803f0000002001007436000080bff1ff7f3f0000804060008033000080405d0000bf0100ba36000080b5000080bf0000803f000000000100ba36000080bf9e0058b5000080400000804000000000000000bf0000000000000000000080bf0000803f0000000000000000000080bf00008040000000000000404000000000000000bf0000000000000000000080bf0000803f0000000000000000000080bf00004040000000000000804000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00008040000080400000404000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00004040000080400000803f00008040000000bf0100ba3600000000000080bf0000803f000000000100ba36000080bfd1ff7f3f0000804060008033000080405d0000bf0100743600000036000080bf0000803f0000002101007436000080bf850036b6000080400000803f0000a040000000bf0100743600000036000080bf0000803f0000002101007436000080bfd1ff7f3f0000a040200080330000a0401d0000bf0100e83500008036000080bf0000803ffeffffa00100e835000080bf2a0036b60000a0400000804000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00008040000080400000404000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf0000404000008040000080400000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf000080400000a040000040400000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf000040400000a0400000404000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00004040000080400000803f00008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f00008040000040400000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf000040400000a0400000803f0000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000a04000004040000080400000000000000000000080bf00000000000080bf0000000000000000000080bf000040c0000000000000803f000080400000000000000000000080bf00000000000080bf0000000000000000000080bf000080bf000000000000404000008040000000bf00000000000080bf00000000000080bf0000000000000000000080bf000040c0000000bf0000803f00008040000000bf00000000000080bf00000000000080bf0000000000000000000080bf000080bf000000bf0000404000000000000000bf000080bf00000000000000000000000000000000000080bf000080bf0000003f00000000000040400000000000000000000080bf00000000000000000000000000000000000080bf000080bf00000000000000000000404000008040000000bf000080bf00000000000000000000000000000000000080bf000080bf0000003f00008040000040400000804000000000000080bf00000000000000000000000000000000000080bf000080bf00000000000080400000803f00000000000000000000803f000000000000000000000000000000000000803f000080bf00000000000000000000803f00000000000000bf0000803f000000000000000000000000000000000000803f000080bf000000bf000000000000803f00008040000000000000803f000000000000000000000000000000000000803f000080bf00000000000080400000803f00008040000000bf0000803f000000000000000000000000000000000000803f000080bf000000bf00008040
+    m_DataSize: 1824
+    _typelessdata: 00000000000000000000000000000000000000000000803f000080bf0000000000000000000080bf00000000000000000000803f000000000000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000000000000000000080400000000000000000000000000000803f000080bf0000000000000000000080bf00000000000080400000803f000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000804000004040000000000000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000000000008040000000000000000000000000000000000000803f000080bf0000000000000000000080bf000080c00000000000004040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000804000008040000080400000000000000000000000000000803f000080bf0000000000000000000080bf000080c000008040000000000000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000000000000a0400000803f0000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000080bf0000a040000040400000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000040c00000a040000080400000a0400000000000000000000000000000803f000080bf0000000000000000000080bf000080c00000a0400000803f00000000000000bf0100e83500000000000080bf0000803f000000000100e835000080bff1ff7f3f0000000020008033000000001d0000bf01007436000000b5000080bf0000803f0000002001007436000080bf320058b5000000000000803f00008040000000bf01007436000000b5000080bf0000803f0000002001007436000080bff1ff7f3f0000804060008033000080405d0000bf0100ba36000080b5000080bf0000803f000000000100ba36000080bf9e0058b5000080400000804000000000000000bf0000000000000000000080bf0000803f0000000000000000000080bf00008040000000000000404000000000000000bf0000000000000000000080bf0000803f0000000000000000000080bf00004040000000000000804000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00008040000080400000404000008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf00004040000080400000803f0000a040000000bf0100743600000036000080bf0000803f0000002101007436000080bfd1ff7f3f0000a040200080330000a0401d0000bf0100e83500008036000080bf0000803ffeffffa00100e835000080bf2a0036b60000a040000080400000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf000080400000a040000040400000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf000040400000a0400000803f00008040000000bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f000080400000803f0000a040000000bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000a04000004040000080400000000000000000000080bf00000000000080bf0000000000000000000080bf000040c0000000000000803f000080400000000000000000000080bf00000000000080bf0000000000000000000080bf000080bf000000000000404000008040000000bf00000000000080bf00000000000080bf0000000000000000000080bf000040c0000000bf0000803f00008040000000bf00000000000080bf00000000000080bf0000000000000000000080bf000080bf000000bf0000404000000000000000bf000080bf00000000000000000000000000000000000080bf000080bf0000003f00000000000040400000000000000000000080bf00000000000000000000000000000000000080bf000080bf00000000000000000000404000008040000000bf000080bf00000000000000000000000000000000000080bf000080bf0000003f00008040000040400000804000000000000080bf00000000000000000000000000000000000080bf000080bf00000000000080400000803f00000000000000000000803f000000000000000000000000000000000000803f000080bf00000000000000000000803f00000000000000bf0000803f000000000000000000000000000000000000803f000080bf000000bf000000000000803f00008040000000000000803f000000000000000000000000000000000000803f000080bf00000000000080400000803f00008040000000bf0000803f000000000000000000000000000000000000803f000080bf000000bf00008040
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -3746,6 +3772,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 994121011}
+    - target: {fileID: 507914727, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 507914727, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03a95d287e27238429d1070560e76482, type: 3}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ec39c33859c9460458c6016be496c4d2, type: 3}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 98c659b0bd6506c4eb065223a89ed096, type: 3}
     - target: {fileID: 622829395, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3762,6 +3812,78 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1288990658}
+    - target: {fileID: 718258608, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 718258608, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: df0dfc021f7d490499b23a101ed231fe, type: 3}
+    - target: {fileID: 907828087, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 907828087, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 92342a1d30edbee43925ae8da18ba138, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].soundType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 97ea78cc4b2dd334399db27fd37ff38b, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5db741fb0de9f9e428307cff332b2da9, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a6843bf9f61130e4baa7a04bfcae71b7, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 54bea77420a35904d9611f5086ae0674, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 35aa889001d96e44ea5b3d81055f9d88, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e3a5dddbb54c204abebd301e1b1d09f, type: 3}
+    - target: {fileID: 973571088, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: b93d3aa77e265564e9bcb335d005bab7, type: 3}
+    - target: {fileID: 1070856780, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070856780, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5990ca32d918ee545ba7f9fb787f7118, type: 3}
+    - target: {fileID: 1227513428, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227513428, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e1d2164150166e4395d0476d9c50d1f, type: 3}
+    - target: {fileID: 1227513428, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e521ba558319f2d4b9041f7bde67741f, type: 3}
     - target: {fileID: 1469570277, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3810,9 +3932,57 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 498330778486452130, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 498330778486452130, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 498330778486452130, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c5fdcd686e34fa4bb2e7c3756304e02, type: 3}
+    - target: {fileID: 498330778486452130, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e53dd39c69acfd544802ce1a5ea67364, type: 3}
     - target: {fileID: 604438232466438136, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].soundType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].lineText.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b7bdb25c73319548bf5e688346221eb, type: 3}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: bcf837ea8938711469a5a91783b2ce9c, type: 3}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].dialogueText.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790377601658549099, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].dialogueText.Array.data[0]
+      value: 123456
       objectReference: {fileID: 0}
     - target: {fileID: 1390299468919554704, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_RootOrder
@@ -3870,6 +4040,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indoor
       objectReference: {fileID: 0}
+    - target: {fileID: 3921583587905519907, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921583587905519907, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921583587905519907, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921583587905519907, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d3e934b074863d4081fb95e7e1066e3, type: 3}
     - target: {fileID: 3977867006327066126, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3926,6 +4112,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 68893227}
+    - target: {fileID: 7107949798102788189, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107949798102788189, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f30a4a0f9d88c5c4ab880ea588f27401, type: 3}
     - target: {fileID: 8404083402982921370, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3986,37 +4180,20 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 730850790}
+    - target: {fileID: 8613499365864790528, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8613499365864790528, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[0].audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26a1577ae44b8c74d80a2b7a62eb7e89, type: 3}
     - target: {fileID: 9092790372108641310, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1d7d0d87271676c4fbc064104b54048b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
---- !u!1 &2881446018085507762 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3953729691997918650, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
-  m_PrefabInstance: {fileID: 2881446018085507761}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2881446018171124627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2881446018085507762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeeb74018fad38a4e8408d19aa1b4e60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SoundInfo:
-  - soundType: 0
-    audioClip: []
-    lineText:
-    - Line1
-    dialogueText: []
-    needFinish: 0
-  PlayOnAwake: 1
 --- !u!1 &2881446018646249109
 GameObject:
   m_ObjectHideFlags: 0
