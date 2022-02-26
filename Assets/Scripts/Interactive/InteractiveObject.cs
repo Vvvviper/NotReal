@@ -73,31 +73,46 @@ namespace Interactive
             if (currentSound.audioClip.Length != 0)
                 audioClip = currentSound.audioClip[clipIndex];
 
-            //get a random dialogue text from sound event
-            string dialogue = "";
-            int textIndex = Random.Range(0, currentSound.dialogueText.Count);
-            if (currentSound.dialogueText.Count != 0)
-                dialogue = currentSound.dialogueText[textIndex];
+            string line = "";
+            Dialogue dialogue = null;
+            bool usingDialogeu = false;
+            //If this object involves a dialgue
+            if (currentSound.dialogueText.DialoguePiece.Count != 0)
+            {
+                dialogue = currentSound.dialogueText;
+                usingDialogeu = true;
+            }
+            else
+            {
+                //get a random dialogue text from sound event
+                int textIndex = Random.Range(0, currentSound.lineText.Count);
+                if (currentSound.lineText.Count != 0)
+                {
+                    line = currentSound.lineText[textIndex];
+                    usingDialogeu = false;
+                }
+            }
+            
                 
 
             switch (currentSound.soundType)
             {
                 case SoundType.playLoop:
                     PlayLoop(audioClip);
-                    DisplayDialogue(dialogue);
+                    DiaplayDialogue(dialogue, line, usingDialogeu);
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
                     break;
                 case SoundType.playOnce:
                     PlayOnce(audioClip);
-                    DisplayDialogue(dialogue);
+                    DiaplayDialogue(dialogue, line, usingDialogeu);
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
                     StartCoroutine(TriggerSound());
                     break;
                 case SoundType.playEnter:
                     PlayOnce(audioClip);
-                    DisplayDialogue(dialogue);
+                    DiaplayDialogue(dialogue, line, usingDialogeu);
                     waitClipFinish = currentSound.needFinish;
                     break;
             }
@@ -126,9 +141,12 @@ namespace Interactive
             audioSource.Play();
         }
 
-        private void DisplayDialogue(string text)
+        private void DiaplayDialogue(Dialogue dialogue, string text, bool usingDialogue)
         {
-            DialogueController.instance.ShowLine(text);
+            if (usingDialogue)
+                DialogueController.instance.ShowDialogue(dialogue);
+            else
+                DialogueController.instance.ShowLine(text);
         }
 
     }
