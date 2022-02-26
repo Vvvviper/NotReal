@@ -2997,6 +2997,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1952711490}
+    - target: {fileID: 604438232466438136, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1390299468919554704, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3044,6 +3048,14 @@ PrefabInstance:
     - target: {fileID: 2913652288954525675, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Name
       value: Indoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977867006327066126, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d7d0d87271676c4fbc064104b54048b, type: 2}
+    - target: {fileID: 4306164765197369922, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5370357567229298554, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Mesh
@@ -3153,6 +3165,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 995379316}
+    - target: {fileID: 9092790372108641310, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d7d0d87271676c4fbc064104b54048b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
 --- !u!43 &1295059395
@@ -4884,6 +4900,81 @@ Transform:
   m_Father: {fileID: 7714813856755707718}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &407233850963645460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407233850963645462}
+  - component: {fileID: 407233850963645463}
+  m_Layer: 0
+  m_Name: footsteps_database
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407233850963645462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407233850963645460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407233850963645463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407233850963645460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd771b8daedadc47a1363e28836b08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  definedSurfaces:
+  - name: carpet
+    footsteps:
+    - {fileID: 8300000, guid: 340db807c95be554bb4917a7e49bedee, type: 3}
+    - {fileID: 8300000, guid: 7bb09a22d86ffd545a91d19e0b467eff, type: 3}
+    - {fileID: 8300000, guid: 7ea9f93a8426a444cbf69c2ad0c14d27, type: 3}
+  - name: woodfloor
+    footsteps:
+    - {fileID: 8300000, guid: 2543f8f2b4924b04f80cd2f01822cc87, type: 3}
+    - {fileID: 8300000, guid: d711406a4c52a8f44813248948e363fb, type: 3}
+    - {fileID: 8300000, guid: 870997bc3d6a6264088f43bf70adca14, type: 3}
+  - name: marble
+    footsteps:
+    - {fileID: 8300000, guid: 9a13d1c2166f65f4bb3883babac1251f, type: 3}
+    - {fileID: 8300000, guid: d51d3cbdf62aac74eb9faaa2bf486d19, type: 3}
+  - name: stair
+    footsteps:
+    - {fileID: 8300000, guid: 46100fda67d57774b93da415dd7c9e4f, type: 3}
+    - {fileID: 8300000, guid: 64508016c866a4e4a8ab0f5b020e5836, type: 3}
+    - {fileID: 8300000, guid: ebefe735b9b904d4dab6e70b96f6f263, type: 3}
+    - {fileID: 8300000, guid: 78a0dbb6959c08f4d83b5d4849d27512, type: 3}
+  registeredTextures:
+  - texture: {fileID: 2800000, guid: 83c28261cb1be7e469dff24976922d71, type: 3}
+    surfaceIndex: 0
+  - texture: {fileID: 2800000, guid: f1f77d71ddeb266408f1c82bf67491a9, type: 3}
+    surfaceIndex: 1
+  - texture: {fileID: 2800000, guid: 1fb4b7127391927409bd9e5d0ae5be72, type: 3}
+    surfaceIndex: 2
+  - texture: {fileID: 2800000, guid: 1fb4b7127391927409bd9e5d0ae5be72, type: 3}
+    surfaceIndex: 0
+  - texture: {fileID: 2800000, guid: 0f3109fecc263474d9517c0300e9dd86, type: 3}
+    surfaceIndex: 3
 --- !u!4 &519569948081494163
 Transform:
   m_ObjectHideFlags: 0
