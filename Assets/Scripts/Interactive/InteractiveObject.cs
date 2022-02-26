@@ -24,6 +24,11 @@ namespace Interactive
             else
                 audioSource = this.GetComponent<AudioSource>();
 
+            
+        }
+
+        private void Start()
+        {
             if (PlayOnAwake)
             {
                 StartCoroutine(TriggerSound());
