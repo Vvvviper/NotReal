@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336194173222276100, guid: f90f83cfb6afd6047a6b318e116ac61c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336194173841823816, guid: f90f83cfb6afd6047a6b318e116ac61c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 336737584912293490, guid: f90f83cfb6afd6047a6b318e116ac61c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -875,7 +883,7 @@ Transform:
   - {fileID: 543450653601384563}
   - {fileID: 670989630}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &285427544
 Mesh:
@@ -5467,7 +5475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &407233850963645463
 MonoBehaviour:
