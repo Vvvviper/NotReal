@@ -225,7 +225,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418302
+  m_Name: pb_Mesh-226560
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -478,6 +478,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2094706916}
+    - target: {fileID: 4478296108181105915, guid: 38b67e8bf2e8c6b4dbc49c146bb7c073, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478296108181105915, guid: 38b67e8bf2e8c6b4dbc49c146bb7c073, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2439dd146b4beb49b836b912f232f26, type: 2}
     - target: {fileID: 4478296108181105916, guid: 38b67e8bf2e8c6b4dbc49c146bb7c073, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1294,21 +1302,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundInfo:
+  - soundType: 0
+    audioClip:
+    - {fileID: 8300000, guid: 63842371fad0fa74ab2623ec7d28a272, type: 3}
+    lineText: []
+    dialogueText:
+      DialoguePiece: []
+    needFinish: 0
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 63842371fad0fa74ab2623ec7d28a272, type: 3}
+    lineText: []
     dialogueText:
-    - Oh! I hit a table!
-    - My feet!
-    needFinish: 1
+      DialoguePiece:
+      - "Friend: \u201CHey MainCharacter(main character\u2019s name), I need your
+        help, I locked myself in the bedroom upstairs, I need you to\u2026\""
+      - "Friend: \"What? What do you mean you can\u2019t take it off? Whatever, I
+        need you to take the key under the TV and get me out of here so I can help
+        you take off the VR headset.\u201D"
+    needFinish: 0
   PlayOnAwake: 1
+--- !u!114 &934646020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934646013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af9e828ec38b5743a1d57684603d750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeInDuration: 0.2
+  _touchShowDuration: 2
+  _fadeOutDuration: 0.5
 --- !u!43 &953751495
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418266
+  m_Name: pb_Mesh-226524
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1693,7 +1728,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418244
+  m_Name: pb_Mesh-226502
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1857,7 +1892,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418278
+  m_Name: pb_Mesh-226536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2021,7 +2056,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418314
+  m_Name: pb_Mesh-226572
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2354,6 +2389,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: FPC
+      value: 
+      objectReference: {fileID: 2119764436}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.DialoguePiece.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.DialoguePiece.Array.data[0]
+      value: Hello
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.DialoguePiece.Array.data[1]
+      value: How are you
+      objectReference: {fileID: 0}
     - target: {fileID: 4462006429035391303, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2446,7 +2497,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-418290
+  m_Name: pb_Mesh-226548
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2610,7 +2661,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90786
+  m_Name: pb_Mesh73004
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2621,8 +2672,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 1, y: 1, z: -1.5}
+      m_Extent: {x: 1, y: 1, z: 1.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2768,6 +2819,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &2119764436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2606085190324383766, guid: 326d7485a2c22b04abc0cf63b04a3b8b, type: 3}
+  m_PrefabInstance: {fileID: 6947775950699009038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &11431599597244353
 PrefabInstance:
   m_ObjectHideFlags: 0

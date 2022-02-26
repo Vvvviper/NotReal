@@ -8,7 +8,8 @@ namespace Interactive
     public class SoundInfo{
         public SoundType soundType;
         public AudioClip[] audioClip;
-        public List<string> dialogueText;
+        public List<string> lineText;
+        public Dialogue dialogueText;
         public bool needFinish;
     }
 
