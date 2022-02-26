@@ -4,11 +4,11 @@ using UnityEngine;
 using TMPro;
 using Controller;
 
-[System.Serializable]
+/*[System.Serializable]
 public class Dialogue
 {
     public List<string> DialoguePiece;
-}
+}*/
 
 
 public class DialogueController : MonoBehaviour
@@ -23,7 +23,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private float _textSpeed;
     [SerializeField] private GameObject DialogueBox;
     [SerializeField] private float _disappearTime = 2f;
-    [SerializeField] private Dialogue _startingDialogue;
+    [SerializeField] private List<string> _startingDialogue;
     [SerializeField] private FirstPersonController FPC;
 
     public enum DialogueState
@@ -45,7 +45,7 @@ public class DialogueController : MonoBehaviour
         
     }
 
-    public void ShowDialogue(Dialogue dia)
+    public void ShowDialogue(List<string> dia)
     {
         StartCoroutine(PopDialogue(dia));
     }
@@ -64,17 +64,17 @@ public class DialogueController : MonoBehaviour
         CurrentDialogueState = DialogueState.Hide;
     }
 
-    IEnumerator PopDialogue(Dialogue dia)
+    IEnumerator PopDialogue(List<string> dia)
     {
         CurrentDialogueState = DialogueState.ShowingDialoue;
         FPC.playerCanMove = false;
         //int dialogueIndex = 0;
-        for (int i = 0; i < dia.DialoguePiece.Count; i++)
+        for (int i = 0; i < dia.Count; i++)
         {
             DialogueBox.SetActive(true);
             float time = 0f;
             string t = "";
-            foreach (char c in dia.DialoguePiece[i].ToCharArray())
+            foreach (char c in dia[i].ToCharArray())
             {
                 t += c;
                 _textComponent.text = t;
@@ -83,36 +83,10 @@ public class DialogueController : MonoBehaviour
             }
             yield return new WaitForSeconds(_disappearTime + time / 4f);
             //dialogueIndex++;
-            Debug.Log(i);
         }
         
         HideDialoge();
     }
-    /*IEnumerator PopText()
-    {
-        float time = 0f;
-        CurrentDialogueState = DialogueState.ShowingDia;
-        string t = "";
-        foreach (char c in _dialogueStrings[_dialoguePieceIndex].DialoguePiece[_dialogueIndex].ToCharArray())
-        {
-            t += c;
-            _textComponent.text = t;
-            yield return new WaitForSeconds(_textSpeed);
-            time += _textSpeed;
-        }
-        CurrentDialogueState = DialogueState.InPlace;
-        yield return new WaitForSeconds(_disappearTime + time / 5f);
-        _dialogueIndex++;
-        if (_dialogueIndex < _dialogueStrings[_dialoguePieceIndex].DialoguePiece.Count)
-            ShowLine();
-        else
-        {
-            HideDialoge();
-            _dialoguePieceIndex++;
-            _dialogueIndex = 0;
-        }
-            
-    }*/
 
     IEnumerator PopLine(string content)
     {

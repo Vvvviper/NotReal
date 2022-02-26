@@ -1306,20 +1306,15 @@ MonoBehaviour:
     audioClip:
     - {fileID: 8300000, guid: 63842371fad0fa74ab2623ec7d28a272, type: 3}
     lineText: []
-    dialogueText:
-      DialoguePiece: []
+    dialogueText: []
     needFinish: 0
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 63842371fad0fa74ab2623ec7d28a272, type: 3}
     lineText: []
     dialogueText:
-      DialoguePiece:
-      - "Friend: \u201CHey MainCharacter(main character\u2019s name), I need your
-        help, I locked myself in the bedroom upstairs, I need you to\u2026\""
-      - "Friend: \"What? What do you mean you can\u2019t take it off? Whatever, I
-        need you to take the key under the TV and get me out of here so I can help
-        you take off the VR headset.\u201D"
+    - hhhhh
+    - aaaaa
     needFinish: 0
   PlayOnAwake: 1
 --- !u!114 &934646020
@@ -2393,6 +2388,18 @@ PrefabInstance:
       propertyPath: FPC
       value: 
       objectReference: {fileID: 2119764436}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.Array.data[0]
+      value: hello,
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: _startingDialogue.Array.data[1]
+      value: hi
+      objectReference: {fileID: 0}
     - target: {fileID: 4462006429035391302, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
       propertyPath: _startingDialogue.DialoguePiece.Array.size
       value: 2

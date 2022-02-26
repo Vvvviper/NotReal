@@ -74,10 +74,10 @@ namespace Interactive
                 audioClip = currentSound.audioClip[clipIndex];
 
             string line = "";
-            Dialogue dialogue = null;
+            List<string> dialogue = new List<string>();
             bool usingDialogeu = false;
             //If this object involves a dialgue
-            if (currentSound.dialogueText.DialoguePiece.Count != 0)
+            if (currentSound.dialogueText.Count != 0)
             {
                 dialogue = currentSound.dialogueText;
                 usingDialogeu = true;
@@ -141,7 +141,7 @@ namespace Interactive
             audioSource.Play();
         }
 
-        private void DiaplayDialogue(Dialogue dialogue, string text, bool usingDialogue)
+        private void DiaplayDialogue(List<string> dialogue, string text, bool usingDialogue)
         {
             if (usingDialogue)
                 DialogueController.instance.ShowDialogue(dialogue);

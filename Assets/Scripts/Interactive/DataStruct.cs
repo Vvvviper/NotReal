@@ -9,7 +9,7 @@ namespace Interactive
         public SoundType soundType;
         public AudioClip[] audioClip;
         public List<string> lineText;
-        public Dialogue dialogueText;
+        public List<string> dialogueText;
         public bool needFinish;
     }
 
