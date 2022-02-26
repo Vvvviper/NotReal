@@ -16,13 +16,14 @@ namespace Interactive
 
         private void Awake()
         {
+            audioSource = this.GetComponent<AudioSource>();
             if (audioSource == null)
             {
                 audioSource = this.gameObject.AddComponent<AudioSource>() as AudioSource;
                 audioSource.playOnAwake = false;
             }
-            else
-                audioSource = this.GetComponent<AudioSource>();
+            
+                
 
             if (PlayOnAwake)
             {
