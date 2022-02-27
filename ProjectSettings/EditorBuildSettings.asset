@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 54c8ddb701ce3424aa421ef718adb2ed
+  - enabled: 1
     path: Assets/Scenes/ChutingYang.unity
     guid: 376b0657a3ea51548802c27b6eb044ed
   m_configObjects: {}
