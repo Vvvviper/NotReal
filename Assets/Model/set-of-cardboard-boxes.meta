@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Model/set-of-cardboard-boxes.meta
 guid: 740a82880405d94458c95e4e1295fc4e
 folderAsset: yes
+=======
+guid: 54c8ddb701ce3424aa421ef718adb2ed
+>>>>>>> 3d07dd9cce3dc3d55911fc0d9c6443ab583b8220:Assets/Scenes/StartScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
