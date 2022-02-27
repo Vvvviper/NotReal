@@ -600,6 +600,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     1: __DIGGER__;__DIGGER_RUNTIME__
+    13: __DIGGER__;__DIGGER_RUNTIME__
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
