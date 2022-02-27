@@ -130,7 +130,7 @@ public class DialogueController : MonoBehaviour
             timeElapsed += Time.deltaTime;
             yield return null;
         }
-
+        _fadePanel.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
