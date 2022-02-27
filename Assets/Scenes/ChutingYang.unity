@@ -21466,6 +21466,18 @@ PrefabInstance:
       propertyPath: PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].dialogueText.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].dialogueText.Array.data[0]
+      value: You should be more careful next time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: SoundInfo.Array.data[1].dialogueText.Array.data[1]
+      value: 'Devin: "Said by a guy whoes head is stucked in VR"'
+      objectReference: {fileID: 0}
     - target: {fileID: 622829397, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Mesh
       value: 
