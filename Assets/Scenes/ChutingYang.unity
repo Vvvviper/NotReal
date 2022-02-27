@@ -3672,16 +3672,16 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 973531090}
-          m_TargetAssemblyTypeName: Interactive.InteractiveObject, Assembly-CSharp
-          m_MethodName: TriggerSoundStart
-          m_Mode: 1
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   PlayOnAwake: 0
 --- !u!65 &372443563
@@ -9304,7 +9304,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2881446018085507761}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aeeb74018fad38a4e8408d19aa1b4e60, type: 3}
   m_Name: 
@@ -21463,6 +21463,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 568218752, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -21514,6 +21518,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1427821741}
+    - target: {fileID: 1794255668, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794255668, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1839314933, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -23106,6 +23118,7 @@ PrefabInstance:
     - {fileID: 991037025, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
     - {fileID: 1223351853, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
     - {fileID: 422212951, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
+    - {fileID: 1794255669, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
 --- !u!1 &2881446018646249109
 GameObject:
@@ -23415,7 +23428,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.8
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -23424,7 +23437,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
