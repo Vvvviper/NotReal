@@ -31,6 +31,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private float _fadeDuration = 0.5f;
     [SerializeField] private float _inBetweenTime = 0.5f;
     [SerializeField] private UnityEvent _fadeAction;
+    [SerializeField] private GameObject _endPanel;
 
     private CanvasGroup _canvasGroup;
 
@@ -108,6 +109,26 @@ public class DialogueController : MonoBehaviour
             yield return null;
         }
         _canvasGroup.alpha = 0f;
+        timeElapsed = 0f;
+
+        yield return new WaitForSeconds(10f);
+        while (timeElapsed <= duration)
+        {
+            float a = Mathf.Lerp(0f, 1f, timeElapsed / duration);
+            _canvasGroup.alpha = a;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        _endPanel.SetActive(true);
+        timeElapsed = 0f;
+        yield return new WaitForSeconds(inBetweenTime);
+        while (timeElapsed <= duration)
+        {
+            float a = Mathf.Lerp(1f, 0f, timeElapsed / duration);
+            _canvasGroup.alpha = a;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
     }
 
     IEnumerator PopDialogue(List<string> dia)
