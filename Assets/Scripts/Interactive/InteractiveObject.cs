@@ -23,8 +23,11 @@ namespace Interactive
                 audioSource.playOnAwake = false;
             }
             
-                
+            
+        }
 
+        private void Start()
+        {
             if (PlayOnAwake)
             {
                 StartCoroutine(TriggerSound());
@@ -104,6 +107,7 @@ namespace Interactive
                     DiaplayDialogue(dialogue, line, usingDialogeu);
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
+                    currentSound.action.Invoke();
                     break;
                 case SoundType.playOnce:
                     PlayOnce(audioClip);
@@ -111,11 +115,13 @@ namespace Interactive
                     waitClipFinish = currentSound.needFinish;
                     NextSoundEvent();
                     StartCoroutine(TriggerSound());
+                    currentSound.action.Invoke();
                     break;
                 case SoundType.playEnter:
                     PlayOnce(audioClip);
                     DiaplayDialogue(dialogue, line, usingDialogeu);
                     waitClipFinish = currentSound.needFinish;
+                    currentSound.action.Invoke();
                     break;
             }
         }

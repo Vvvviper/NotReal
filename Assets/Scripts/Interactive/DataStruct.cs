@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Interactive
 {
@@ -11,6 +12,7 @@ namespace Interactive
         public List<string> lineText;
         public List<string> dialogueText;
         public bool needFinish;
+        public UnityEvent action;
     }
 
     public enum SoundType
