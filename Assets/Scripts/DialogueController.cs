@@ -30,6 +30,7 @@ public class DialogueController : MonoBehaviour
     {
         ShowingDialoue,
         ShowingLine,
+        InPlace,
         Hide,
     }
 
@@ -59,6 +60,8 @@ public class DialogueController : MonoBehaviour
 
     public void HideDialoge()
     {
+        if (CurrentDialogueState != DialogueState.InPlace)
+            return;
         FPC.playerCanMove = true;
         DialogueBox.SetActive(false);
         CurrentDialogueState = DialogueState.Hide;
@@ -82,6 +85,7 @@ public class DialogueController : MonoBehaviour
                 time += _textSpeed;
             }
             yield return new WaitForSeconds(_disappearTime + time / 4f);
+            CurrentDialogueState = DialogueState.InPlace;
             //dialogueIndex++;
         }
         
@@ -102,6 +106,7 @@ public class DialogueController : MonoBehaviour
             time += _textSpeed;
         }
         yield return new WaitForSeconds(_disappearTime + time / 4f);
+        CurrentDialogueState = DialogueState.InPlace;
         HideDialoge();
     }
 }
