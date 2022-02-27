@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Controller;
+using UnityEngine.Events;
 
 /*[System.Serializable]
 public class Dialogue
@@ -25,6 +26,13 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private float _disappearTime = 2f;
     [SerializeField] private List<string> _startingDialogue;
     [SerializeField] private FirstPersonController FPC;
+    [Header("Fade in and out")]
+    [SerializeField] private GameObject _fadePanel;
+    [SerializeField] private float _fadeDuration = 0.5f;
+    [SerializeField] private float _inBetweenTime = 0.5f;
+    [SerializeField] private UnityEvent _fadeAction;
+
+    private CanvasGroup _canvasGroup;
 
     public enum DialogueState
     {
@@ -39,11 +47,15 @@ public class DialogueController : MonoBehaviour
     private void Start()
     {
         ShowDialogue(_startingDialogue);
+        _canvasGroup = _fadePanel.GetComponent<CanvasGroup>();
     }
 
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            FadeInAndOut();
+        }
     }
 
     public void ShowDialogue(List<string> dia)
@@ -65,6 +77,35 @@ public class DialogueController : MonoBehaviour
         FPC.playerCanMove = true;
         DialogueBox.SetActive(false);
         CurrentDialogueState = DialogueState.Hide;
+    }
+
+    public void FadeInAndOut()
+    {
+        StartCoroutine(FadeAnim(_fadeDuration, _inBetweenTime, _fadeAction));
+    }
+
+    IEnumerator FadeAnim(float duration, float inBetweenTime, UnityEvent e)
+    {
+        float timeElapsed = 0f;
+        while( timeElapsed <= duration)
+        {
+            float a = Mathf.Lerp(0f, 1f, timeElapsed / duration);
+            _canvasGroup.alpha = a;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        _canvasGroup.alpha = 1f;
+        e.Invoke();
+        timeElapsed = 0f;
+        yield return new WaitForSeconds(inBetweenTime);
+        while (timeElapsed <= duration)
+        {
+            float a = Mathf.Lerp(1f, 0f, timeElapsed / duration);
+            _canvasGroup.alpha = a;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        _canvasGroup.alpha = 0f;
     }
 
     IEnumerator PopDialogue(List<string> dia)
