@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Controller;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 /*[System.Serializable]
 public class Dialogue
@@ -172,5 +173,15 @@ public class DialogueController : MonoBehaviour
         yield return new WaitForSeconds(_disappearTime + time / 4f);
         CurrentDialogueState = DialogueState.InPlace;
         HideDialoge();
+    }
+
+    public void LeaveButtonClicked()
+    {
+        Application.Quit();
+    }
+
+    public void RestartButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
