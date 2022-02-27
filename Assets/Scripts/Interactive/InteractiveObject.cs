@@ -50,6 +50,11 @@ namespace Interactive
             }
         }
 
+        public void TriggerSoundStart()
+        {
+            StartCoroutine(TriggerSound());
+        }
+
         IEnumerator TriggerSound()
         {
             // Check if there is sound event ready for play
