@@ -35359,9 +35359,9 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 03a95d287e27238429d1070560e76482, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Why are there so many glasses?
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -35485,10 +35485,10 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: f30a4a0f9d88c5c4ab880ea588f27401, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Ah ... is that a vase I just kicked?
     - Who put there vase in ... well I don't really know where I am.
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -35612,9 +35612,9 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 26a1577ae44b8c74d80a2b7a62eb7e89, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Ah, the door.
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -36091,10 +36091,10 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: df0dfc021f7d490499b23a101ed231fe, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Oops...
     - Thank god nothing's broken
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -36218,10 +36218,10 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 5990ca32d918ee545ba7f9fb787f7118, type: 3}
-    lineText: []
-    dialogueText:
-    - Oops......
+    lineText:
     - Well, whatever that is I hope it ain't expensive.
+    - Oops......
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -37074,9 +37074,10 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 03a95d287e27238429d1070560e76482, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Why are there so many glasses?
+    dialogueText:
+    - 
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -38810,9 +38811,9 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 26a1577ae44b8c74d80a2b7a62eb7e89, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Ah, the door.
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -38936,10 +38937,10 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: f30a4a0f9d88c5c4ab880ea588f27401, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Ah ... is that a vase I just kicked?
     - Who put there vase in ... well I don't really know where I am.
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
@@ -39925,9 +39926,9 @@ MonoBehaviour:
   - soundType: 1
     audioClip:
     - {fileID: 8300000, guid: 92342a1d30edbee43925ae8da18ba138, type: 3}
-    lineText: []
-    dialogueText:
+    lineText:
     - Put your glasses somewhere safe, will ya?
+    dialogueText: []
     needFinish: 0
     action:
       m_PersistentCalls:
