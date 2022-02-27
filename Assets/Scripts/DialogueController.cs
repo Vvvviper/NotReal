@@ -88,7 +88,7 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator FadeAnim(float duration, float inBetweenTime, UnityEvent e)
     {
-        FPC.playerCanMove = false;
+        //FPC.playerCanMove = false;
 
         float timeElapsed = 0f;
         while( timeElapsed <= duration)
