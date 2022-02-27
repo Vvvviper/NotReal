@@ -151,9 +151,9 @@ namespace Interactive
 
         private void DiaplayDialogue(List<string> dialogue, string text, bool usingDialogue)
         {
-            if (usingDialogue)
+            if (usingDialogue && dialogue.Count > 0)
                 DialogueController.instance.ShowDialogue(dialogue);
-            else
+            else if(text.Length > 0)
                 DialogueController.instance.ShowLine(text);
         }
 
