@@ -20595,7 +20595,7 @@ PrefabInstance:
       objectReference: {fileID: 994121011}
     - target: {fileID: 205336392, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 205336393, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_LocalScale.x
@@ -20611,7 +20611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205336395, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 622829397, guid: 7dcdee080514f2f4f88fc8589bd5124e, type: 3}
       propertyPath: m_Mesh
@@ -22341,6 +22341,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462006429035391303, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046992469643835044, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7046992469643835045, guid: 179ee4ad2c7d95141987b69a18d7787a, type: 3}
