@@ -130,6 +130,9 @@ public class DialogueController : MonoBehaviour
             timeElapsed += Time.deltaTime;
             yield return null;
         }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     IEnumerator PopDialogue(List<string> dia)

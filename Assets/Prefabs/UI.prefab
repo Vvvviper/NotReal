@@ -359,8 +359,8 @@ MonoBehaviour:
   _startingDialogue: []
   FPC: {fileID: 0}
   _fadePanel: {fileID: 1389543887}
-  _fadeDuration: 0.5
-  _inBetweenTime: 0.5
+  _fadeDuration: 2
+  _inBetweenTime: 2
   _fadeAction:
     m_PersistentCalls:
       m_Calls:
@@ -933,7 +933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059514578340316010, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5059514578340316011, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_Pivot.x
