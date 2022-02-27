@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059514576950599929, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 348
+      value: 438
       objectReference: {fileID: 0}
     - target: {fileID: 5059514576950599929, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059514576950599930, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_text
-      value: 'Untitled "VR" Game
+      value: 'Game Name
 
 
 
@@ -517,11 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059514576950599930, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_fontSize
-      value: 70.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5059514576950599930, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
-      propertyPath: m_margin.z
-      value: -73.40311
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 5059514576950599930, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_VerticalAlignment
@@ -653,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059514578340316010, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5059514578340316011, guid: 9bbfa38eca101d4468a053e318bbbd86, type: 3}
       propertyPath: m_Pivot.x
