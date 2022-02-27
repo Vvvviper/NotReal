@@ -31,6 +31,17 @@ public class CollidingController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (_inAnimation)
+            return;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _inAnimation = true;
+            StartCoroutine(CollisionAnim());
+        }
+    }
+
     IEnumerator CollisionAnim()
     {
         float timeElapsed = 0f;

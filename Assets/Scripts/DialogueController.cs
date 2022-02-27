@@ -112,7 +112,7 @@ public class DialogueController : MonoBehaviour
         _canvasGroup.alpha = 0f;
         timeElapsed = 0f;
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         while (timeElapsed <= duration)
         {
             float a = Mathf.Lerp(0f, 1f, timeElapsed / duration);
